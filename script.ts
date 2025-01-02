@@ -94,17 +94,14 @@ const oldHollywoodActors : string[] = ["Marlon Brando", "Audrey Hepburn", "Eliza
 // console.log(actorsReference);
 // ! nur bei dieser methode wird der originalarray zusammen mit der kopie mitmutiert!
 
-// const actorsReference = oldHollywoodActors.concat();
-// actorsReference.push("Marilyn Monroe");
+// const actorsReference = oldHollywoodActors.concat("Marilyn Monroe");
 // console.log(oldHollywoodActors);
 // console.log(actorsReference);
 
-// const actorsReference = oldHollywoodActors.slice();
-// actorsReference.push("Marilyn Monroe");
-// console.log(oldHollywoodActors);
-// console.log(actorsReference);
-
-const actorsReference = [...oldHollywoodActors];
-actorsReference.push("Marilyn Monroe");
+const actorsReference = oldHollywoodActors.slice() + "Marilyn Monroe";
 console.log(oldHollywoodActors);
 console.log(actorsReference);
+
+// const actorsReference = [...oldHollywoodActors, "Marilyn Monroe"];
+// console.log(oldHollywoodActors);
+// console.log(actorsReference);
