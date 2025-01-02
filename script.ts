@@ -98,10 +98,11 @@ const oldHollywoodActors : string[] = ["Marlon Brando", "Audrey Hepburn", "Eliza
 // console.log(oldHollywoodActors);
 // console.log(actorsReference);
 
-const actorsReference = oldHollywoodActors.slice() + "Marilyn Monroe";
-console.log(oldHollywoodActors);
-console.log(actorsReference);
-
-// const actorsReference = [...oldHollywoodActors, "Marilyn Monroe"];
+// const actorsReference = oldHollywoodActors.slice();
+// actorsReference.push("Marilyn Monroe");
 // console.log(oldHollywoodActors);
 // console.log(actorsReference);
+
+const actorsReference = [...oldHollywoodActors, "Marilyn Monroe"];
+console.log(oldHollywoodActors);
+console.log(actorsReference);
